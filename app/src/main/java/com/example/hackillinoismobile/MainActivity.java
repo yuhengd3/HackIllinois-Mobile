@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                     getResources().getIdentifier("button_" + i, "id", getPackageName()));
             button.setOnClickListener(v -> {
                 eventsLinearLayout.removeAllViews();
-                
+
                 for (Event event : eventListByDay.get(dayIndex)) {
                     View eventChunk = getLayoutInflater().inflate(R.layout.chunk_event,
                             eventsLinearLayout, false);
